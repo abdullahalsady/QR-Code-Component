@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font */
+    --font-size: 15px; 
+    --font-family: 'Josefin Sans', sans-serif;
+    --font-weight-small: 400;
+    --font-weight-large: 700;
+    
+    /* colors */
+    --primary-clr: hsl(220, 15%, 55%);
+    --secondary-clr: hsl(217, 45%, 22%);
+    --white-clr: hsl(212, 45%, 89%);
+    --gray-clr: hsl(0, 0%, 100%);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    flex-direction: column;
+
+    background-color: var(--white-clr);
+    font-family: var(--font-family);
+
+}
+
+h1, h2, h3, h4, p {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    background-color: var(--gray-clr);
+    padding: 1.5rem;
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+}
+
+.container img {
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.container h2 {
+    color: var(--secondary-clr);
+    font-weight: var(--font-weight-large);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.container > p {
+    color: var(--primary-clr);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+/* mobile */
+@media screen and  (min-width: 375px) {
+    .container {
+        width: 375px;
+    }
+} 
+
+
